@@ -1,0 +1,82 @@
+h1{
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    background-color: blue;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.comfortaa{
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 483;
+  font-style: normal;
+}
+body{
+    background-color: aqua;
+}
+.footer {
+    position: fixed;
+    font-family: "Comfortaa", sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center
+}
+.sound-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-family: "Comfortaa", sans-serif;
+    margin: 5px;
+}
+
+.sound-button:hover {
+    background-color: #007bff;
+}
+.banner {
+    background-color: #0000ff; /* Banner background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border-radius as needed */
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container.left {
+    order: 1;
+}
+
+.logo-container.right {
+    order: 3;
+}
+
+.logo {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.title-container {
+    order: 2;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+
+.site-title {
+    color: #fff; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: "Comfortaa", sans-serif;
+}

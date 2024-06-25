@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoiseBox</title>
+    <link rel="Stylesheet" href="Stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@483&family=Poetsen+One&display=swap" rel="stylesheet">
+<!-- Standard Favicon -->
+<link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container left">
+            <img src="Logo.png" alt="NoiseBox Left Logo" class="logo">
+        </div>
+        <div class="title-container">
+            <span class="site-title">NoiseBox</span>
+        </div>
+        <div class="logo-container right">
+            <img src="Logo.png" alt="NoiseBox Right Logo" class="logo">
+        </div>
+    </header>
+   
+        <button class="sound-button" onclick="playSound('sound1')">And his name is john cena</button>
+        <audio id="sound1" src="john.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound2')">Skibidi dop dop</button>
+        <audio id="sound2" src="dop dop.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound3')">Oh, sorry</button>
+        <audio id="sound3" src="Oh, sorry.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound4')">Happy wow</button>
+        <audio id="sound4" src="wowhappy.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound5')">(Volume Warning!!) Wow + clapping</button>
+        <audio id="sound5" src="wowclap.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound6')">(Volume Warning!!) I'm sorry</button>
+        <audio id="sound6" src="momsorry.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound7')">Hello There</button>
+        <audio id="sound7" src="hellothere.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound10')">Oh no</button>
+        <audio id="sound10" src="ohno.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound8')">Amoungus Drip</button>
+        <audio id="sound8" src="amongusdrip.mp3"></audio>
+
+        <button class="sound-button" onclick="playSound('sound9')">Sus amoungus</button>
+        <audio id="sound9" src="susAMOUNGUS.mp3"></audio>
+
+
+    <script>
+        function playSound(soundId) {
+            const audio = document.getElementById(soundId);
+            audio.play();
+        }
+    </script>
+
+    <div class="footer">
+        <h3>NoiseBox was created by a student for fun. Please do not use the sounds durring class as we are not responsible for anyone getting in trouble.</h3>
+    </div>
+</body>
+</html>

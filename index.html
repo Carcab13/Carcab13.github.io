@@ -33,27 +33,34 @@
             <p id="errorMessage" style="color: red; display: none;">Incorrect code. Please try again.</p>
         </div>
         </div>
-</body>
 
     <script>
-        const correctCode = "2468"; // Replace with the correct code
+        // Replace these codes with your desired values and file paths
+        const codeRedirects = {
+            "2468": "NoiseBox.html",
+            "secret2468": "NoiseBox_hidden.html"
+        };
+
         document.getElementById('codeForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form from submitting the traditional way
 
             const enteredCode = document.getElementById('codeInput').value;
 
-            if (enteredCode === correctCode) {
+            if (codeRedirects[enteredCode]) {
                 const content = document.getElementById('content');
                 content.classList.add('slide-out-right');
                 
                 // Redirect after the animation completes
                 setTimeout(() => {
-                    window.location.href = 'NoiseBox.html'; // Replace with the target file
-                }, 1000); // Match the duration of the fade-out animation
+                    window.location.href = codeRedirects[enteredCode]; // Redirect to the corresponding file
+                }, 1000); // Match the duration of the slide-out-right animation
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
             }
         });
     </script>
+    <div class="footer">
+        <p class="footer-text">Ver. Beta 6.3.0</p>
+    </div>
 </body>
 </html>

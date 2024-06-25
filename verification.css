@@ -110,3 +110,18 @@ p{
 #codeForm button:hover {
     background-color: #0051ff;
 }
+.footer{
+    position: fixed;
+    font-family: "Comfortaa", sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+.footer-text{
+    margin-right: 20px;
+    color: black;
+    text-align: right;
+    font-size: 17px;
+}
